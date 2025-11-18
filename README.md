@@ -65,12 +65,16 @@ pip install -r requirements.txt
 models/ papkasiga quyidagilarni qo‘ying:
 
 vosk-model-small-en-us-0.15
+https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip
 
 vosk-model-small-ru-0.22
+https://alphacephei.com/vosk/models/vosk-model-small-ru-0.22.zip
 
-vosk-model-small-uz-0.1 (agar mavjud bo‘lsa)
+vosk-model-small-uz-0.1
+https://alphacephei.com/vosk/models/vosk-model-small-uz-0.1.zip
 
 yolov8n.pt
+https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt
 
 4️⃣ Tesseract OCR o‘rnating
 
@@ -78,18 +82,20 @@ Windows uchun:
 
 https://github.com/UB-Mannheim/tesseract/wiki
 
+O‘rnagan manzilni kodda yangilang:
 
-pytesseract.pytesseract.tesseract_cmd ga yo‘lni kiriting.
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 ▶️ Dastur ishga tushirish
-python AI_Assistant.py
+python Yordamchi SI.py
 
 📁 Loyihaning tuzilishi
-AI-Yordamchi/
+Yordamchi SI/
 │── models/
 │   ├── vosk-model-small-uz-0.1/
 │   ├── vosk-model-small-en-us-0.15/
-│   └── yolov8n.pt
+    ├── vosk-model-small-ru-0.22/
+│── yolov8n.pt
 │── images/
 │── AI_Assistant.py
 │── requirements.txt
@@ -98,7 +104,7 @@ AI-Yordamchi/
 
 Loyiha maqsadi
 
-Ushbu loyiha kurs ishi uchun, sun’iy intellekt kutubxonalari bilan ishlashni amalda o‘rganish uchun yaratilgan. Junior darajadagi AI, CV va STT/TTS texnologiyalari bir dasturda birlashtirilgan.
+Ushbu loyiha kurs ishim uchun, sun’iy intellekt kutubxonalari bilan ishlashni amalda o‘rganish uchun yaratilgan. Junior darajadagi AI, CV va STT/TTS texnologiyalari bir dasturda birlashtirilgan.
 
 Litsenziya
 
